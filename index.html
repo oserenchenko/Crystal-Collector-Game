@@ -19,15 +19,18 @@
   <div class="heading text-center mt-3">
     <h1>Crystal Collector Game</h1>
   </div>
-  <div class="container mt-5 pt-3 pr-3 pl-3 pb-3">
-    <div class="row">
-      <div class="col-sm-5 score mr-3 ml-3">
+  <div class="container mt-5 pt-5 pb-5">
+    <div class="row justify-content-center">
+      <div class="col-sm-4 score">
         <h3>Game Score:</h3>
         <div class="displayedScores" id="gameScore"></div>
       </div>
-      <div class="col-sm-1">
+      <div class="col-sm-2 pt-5 text-center">
+        <h3 id="winScore">Wins:</h3>
+        <br>
+        <h3 id="lossesScore">Losses:</h3>
       </div>
-      <div class="col-sm-5 score mr-3 ml-3">
+      <div class="col-sm-4 score">
         <h3>Your Score:</h3>
         <div class="displayedScores" id="userScore"></div>
       </div>
@@ -35,24 +38,20 @@
     <br>
     <div class="row">
       <div class="col-sm-12 text-center">
-        <button class="crystals" id="crystal1"><img src="assets/images/crystal1.png" alt="Crystal #1"></button>
-        <button class="crystals" id="crystal2"><img src="assets/images/crystal2.png" alt="Crystal #2"></button>
-        <button class="crystals" id="crystal3"><img src="assets/images/crystal3.png" alt="Crystal #3"></button>
-        <button class="crystals" id="crystal4"><img src="assets/images/crystal4.png" alt="Crystal #4"></button>
+        <button class="crystals" id="crystal1">
+          <img src="assets/images/crystal1.png" alt="Crystal #1">
+        </button>
+        <button class="crystals" id="crystal2">
+          <img src="assets/images/crystal2.png" alt="Crystal #2">
+        </button>
+        <button class="crystals" id="crystal3">
+          <img src="assets/images/crystal3.png" alt="Crystal #3">
+        </button>
+        <button class="crystals" id="crystal4">
+          <img src="assets/images/crystal4.png" alt="Crystal #4">
+        </button>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h3 id="winScore">Wins:</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h3 id="lossesScore">Losses:</h3>
-      </div>
-    </div>
-
-
   </div>
 
 </body>
