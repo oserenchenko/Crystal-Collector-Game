@@ -1,0 +1,40 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  background-image: url("../images/crystalcave.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.heading {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Megrim', cursive;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.container {
+background-color: black;
+}
+
+img {
+  width: 200px;
+}
+
+.score {
+  height: 200px;
+  background-color: rgb(97, 144, 158);
+}
+
+button {
+  background-color: black;
+  border: none;
+}
+
+.displayedScores {
+  font-size: 80px;
+  text-align: center;
+}
