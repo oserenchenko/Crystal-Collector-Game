@@ -1,29 +1,52 @@
 var gameRandomScore;
-var userCalcScore = 0;
+var userCalcScore;
 var wins = 0;
 var losses = 0;
+var gameReady = false;
 
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * max) + min;
 }
 
-
-$(document).ready(function () {
+function gameSetUp() {
   gameRandomScore = getRandomInt(19, 120);
   $("#gameScore").text(gameRandomScore);
-  console.log(typeof (gameRandomScore));
   $(".crystals").each(function () {
     $(this).val(getRandomInt(1, 12));
   });
+  userCalcScore = 0;
+  $("#userScore").text(userCalcScore);
+  $("#userScore").css("color", "white");
+  $("#userScore").css("fontSize", 80);
+  gameReady = true;
+}
+
+$(document).ready(function () {
+  gameSetUp();
   $(".crystals").on("click", function () {
-    userCalcScore += Number($(this).val());
-    console.log(typeof (userCalcScore));
-    $("#userScore").text(userCalcScore);
+    if (gameReady) {
+      userCalcScore += Number($(this).val());
+      $("#userScore").text(userCalcScore);
+    }
     if (userCalcScore == gameRandomScore) {
-      wins++;
-      console.log(wins);
-      $("#winScore").text("Wins: " + wins);
-    };
-  });
+      if (gameReady) {
+        wins++;
+        gameReady = false;
+        $("#winScore").text("Wins: " + wins);
+        $("#userScore").css("color", "blue").css("fontSize", 100);
+        // $("#userScore").css("fontSize", 100);
+        setTimeout(gameSetUp, 3000);
+      }
+    } else if (userCalcScore > gameRandomScore) {
+      if (gameReady) {
+        losses++;
+        gameReady = false;
+        $("#lossesScore").text("Losses: " + losses);
+        $("#userScore").css("color", "red").css("fontSize", 100);
+        // $("#userScore").css("fontSize", 100);
+        setTimeout(gameSetUp, 3000);
+      }
+    }
+  })
 });
