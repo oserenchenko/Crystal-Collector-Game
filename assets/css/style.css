@@ -42,7 +42,7 @@ button {
 }
 
 #winScore, #lossesScore {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .card {
@@ -67,3 +67,17 @@ button {
   position: absolute;
   z-index: 1;
 }
+
+.crystals {
+  outline: none !important;
+}
+
+.crystals:hover {
+  border: 2px solid rgb(97, 144, 158);
+}
+
+.btn-primary {
+  font-size: 18px;
+}
+
+
