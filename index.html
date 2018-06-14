@@ -19,18 +19,30 @@
   <div class="heading text-center mt-3">
     <h1>Crystal Collector Game</h1>
   </div>
-  <div class="container mt-5 pt-5 pb-5">
+  <div class="container pt-5 pb-5 mt-5">
     <div class="row justify-content-center">
-      <div class="col-sm-4 score">
+      <div class="col-sm-3 score">
         <h3>Game Score:</h3>
         <div class="displayedScores" id="gameScore"></div>
       </div>
-      <div class="col-sm-2 pt-5 text-center">
-        <h3 id="winScore">Wins:</h3>
+      <div class="col-sm-5 text-center">
+        <button class="btn btn-primary center-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+          aria-controls="collapseExample">
+          Instructions
+        </button>
+        <div class="collapse text-center" id="collapseExample">
+          <div class="card card-body mt-2">
+            <p>Each round, the Game Score and each of the 4 crystals get random values. Pressing each crystal will add that
+              random value to Your Score. To get a point, you must get Your Score to equal the Game Score but, going over
+              the Game Score will make you lose.</p>
+          </div>
+        </div>
         <br>
+        <br>
+        <h3 id="winScore">Wins:</h3>
         <h3 id="lossesScore">Losses:</h3>
       </div>
-      <div class="col-sm-4 score">
+      <div class="col-sm-3 score">
         <h3>Your Score:</h3>
         <div class="displayedScores" id="userScore"></div>
       </div>
@@ -54,6 +66,14 @@
     </div>
   </div>
 
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

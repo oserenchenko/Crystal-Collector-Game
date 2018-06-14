@@ -8,11 +8,12 @@ body {
 
 .heading {
   background-color: black;
+  height: 110px;
 }
 
 h1 {
   font-family: 'Megrim', cursive;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: bold;
 }
 
@@ -37,8 +38,32 @@ button {
 .displayedScores {
   font-size: 80px;
   text-align: center;
+  font-family: 'Megrim', cursive;
 }
 
 #winScore, #lossesScore {
   font-size: 25px;
+}
+
+.card {
+  background-color: rgb(97, 144, 158);
+  color: white;
+  width: 445px;
+  height: 175px;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgb(97, 144, 158);
+  border-color: white;
+}
+
+#collapseExample {
+  position: absolute;
+  z-index: 1;
 }
