@@ -68,8 +68,8 @@ button {
   z-index: 1;
 }
 
-.crystals {
-  outline: none !important;
+.crystals:focus {
+  outline: none;
 }
 
 .crystals:hover {
