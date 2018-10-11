@@ -9,7 +9,7 @@ ______________
 ## Visit the deployed version of Crystal-Collector-Game
 [Crystal Collector Game](https://oserenchenko.github.io/Crystal-Collector-Game/)
 
-![homepage]()
+![homepage](crystal_game.png)
 
 ______________
 ______________
